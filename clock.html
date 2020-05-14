@@ -9,13 +9,18 @@
     <title>Pomodoro Clock</title>
 </head>
 <body>
-    <button onclick="upTime()">^</button>
+    <div class="container">
+        <button class="changeTime" onclick="upTime()">^</button>
+        <div class="timer" id="timer">25:00</div>
+        <button class="changeTime" onclick="downTime()">v</button>
 
-    <div id="timer">25:00</div>
+        <button class="changeTime" onclick="upBreak()">^</button>
+        <div class="break" id="break">5:00</div>
+        <button class="changeTime" onclick="downBreak()">v</button>
+    </div>
 
-    <button onclick="downTime()">v</button>
-
-    <button onclick="setInterval(myFunc, 1000); this.onclick=null;">CLICK ME</button>
+    <button onclick="myFunc()">x</button>
+    <!-- <button onclick="myPause()">||</button> -->
 </body>
 
 <script src="script.js"></script>
