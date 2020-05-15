@@ -9,18 +9,30 @@
     <title>Pomodoro Clock</title>
 </head>
 <body>
-    <div class="container">
-        <button class="changeTime" onclick="upTime()">^</button>
-        <div class="timer" id="timer">25:00</div>
-        <button class="changeTime" onclick="downTime()">v</button>
+    <div class="title" id="title">Pomodoro Clock</div>
 
-        <button class="changeTime" onclick="upBreak()">^</button>
-        <div class="break" id="break">5:00</div>
-        <button class="changeTime" onclick="downBreak()">v</button>
+    <div class="container">
+        <button class="changeTime" onclick="downTime()">▼</button>
+        <div class="timer" id="timer">25:00</div>
+        <button class="changeTime" onclick="upTime()">▲</button>        
+
+        <button class="changeTime" onclick="downBreak()">▼</button>
+        <div class="timer" id="break">5:00</div>
+        <button class="changeTime" onclick="upBreak()">▲</button>
+        
     </div>
 
-    <button onclick="myFunc()">x</button>
-    <!-- <button onclick="myPause()">||</button> -->
+    <div class="container">
+        <button class="changeTime btn" id="playPause" onclick="myFunc()">⏯️</button>
+        <button class="changeTime btn" onclick="myRestart()">🔁</button>
+    </div>
+
+    <div class="container">
+        <div class="num"></div>
+        <div class="num"></div>
+        <div class="num"></div>
+        <div class="num"></div>
+    </div>
 </body>
 
 <script src="script.js"></script>

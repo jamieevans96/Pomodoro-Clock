@@ -1,4 +1,66 @@
+html {
+    height: 100%;
+}
+
+body{
+    font-family: sans-serif;
+    background: rgb(199,230,255);
+    background: linear-gradient(100deg, rgba(199,230,255,1) 0%, rgba(125,85,255,1) 100%);
+    height: 100%;
+    margin: 0;
+}
+
+.title{
+    text-align: center;
+    font-size: 88px;
+    padding: 80px;
+    font-weight: bold;
+    opacity: 75%;
+    text-shadow: 0 2px 4px #000000;
+    color: rgb(255, 255, 255);
+}
+
 .container {
     display: flex;
-    margin: 0 auto;
+    margin: 0px auto;
+    width: 50%;
+    height: auto;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+
+.num {
+    height: 30px;
+    width: 30px;
+    border-style: solid;
+    border-radius: 30px;
+    margin: 4px;
+}
+
+.timer {
+    font-size: 40px;
+}
+
+.changeTime {
+    background-color: none;
+    border: none;
+    width: 45px;
+    border-radius: 4px;
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    outline: none;
+    opacity: 70%;
+}
+
+.changeTime:hover {
+    opacity: 100%;
+    transition: 0.15s;
+}
+
+.btn {
+    font-size: 60px;
+    text-align: center;
+    height: 120px;
+    width: 120px;
 }
